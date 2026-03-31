@@ -119,7 +119,7 @@ elif layer == "2. Market Dynamics":
             "solver": "repulsion",
             "repulsion": {
                 "nodeDistance": 200,      # Pushes nodes away from each other
-                "springLength": 250,      # Stretches the resting length of the edges
+                "springLength": 400,      # Stretches the resting length of the edges
                 "springConstant": 0.02    # Lowers the tension so dragging feels natural
             }
         }
