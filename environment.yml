@@ -1,0 +1,22 @@
+name: eval_engine_env
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - fastapi
+  - uvicorn
+  - scikit-learn
+  - pandas
+  - numpy
+  - pytorch::pytorch
+  - pyg::pyg
+  - networkx
+  - streamlit
+  - requests
+  - plotly
+  - pip
+  - pip:
+    - streamlit-agraph

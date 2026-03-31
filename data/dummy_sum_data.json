@@ -1,0 +1,30 @@
+{
+  "entity": {
+    "id": "SMM-774",
+    "name": "Apex Machining Co.",
+    "industry": "Precision Manufacturing"
+  },
+  "operational_core": {
+    "digital_assets": {
+      "layout_3d_uri": "s3://demo-bucket/apex_layout.gltf",
+      "proprietary_cad_encrypted": true
+    },
+    "supply_chain_graph": {
+      "nodes": [
+        {"id": "Supplier_A", "type": "Raw Steel", "health_score": 0.91, "is_single_source": false},
+        {"id": "Supplier_B", "type": "Specialty Coatings", "health_score": 0.34, "is_single_source": true}
+      ],
+      "edges": [
+        {"source": "Supplier_A", "target": "SMM-774", "lead_time_days": 14},
+        {"source": "Supplier_B", "target": "SMM-774", "lead_time_days": 45}
+      ]
+    }
+  },
+  "market_dynamics": {
+    "dynamic_asset_valuation": {
+      "tangible_assets_usd": 4200000,
+      "intangible_assets_usd": 1850000,
+      "anchor_firm_stability_index": 0.68
+    }
+  }
+}
